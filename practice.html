@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Custom Image Alert</title>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-100">
+
+<h1 class="text-2xl font-bold mb-6">Custom Image Alert Demo</h1>
+<button 
+    onclick="showAlert()" 
+    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow"
+>
+    Show Image Alert
+</button>
+
+<!-- Custom Alert -->
+
+
+<script>
+function showAlert() {
+    const alertDiv = document.getElementById("customAlert");
+    alertDiv.classList.remove("hidden"); // Show alert
+}
+
+function hideAlert() {
+    const alertDiv = document.getElementById("customAlert");
+    alertDiv.classList.add("hidden"); // Hide alert
+}
+</script>
+
+</body>
+</html>
