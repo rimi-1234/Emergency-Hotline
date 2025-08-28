@@ -3,32 +3,68 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<title>Custom Image Alert</title>
+<title>Copy One Word Example</title>
+<style>
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+  }
+  .copy-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .copy-btn:active {
+    background: #43a047;
+  }
+  .status {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+</style>
 </head>
-<body class="flex flex-col items-center justify-center h-screen bg-gray-100">
+<body>
 
-<h1 class="text-2xl font-bold mb-6">Custom Image Alert Demo</h1>
-<button 
-    onclick="showAlert()" 
-    class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded shadow"
->
-    Show Image Alert
-</button>
+<div class="card">
+  <p>This is an example with the word: <span class="word-to-copy">Hello</span></p>
+  <button class="copy-btn">Copy Word</button>
+  <span class="status"></span>
+</div>
 
-<!-- Custom Alert -->
-
+<div class="card">
+  <p>This is another example with the word: <span class="word-to-copy">World</span></p>
+  <button class="copy-btn">Copy Word</button>
+  <span class="status"></span>
+</div>
 
 <script>
-function showAlert() {
-    const alertDiv = document.getElementById("customAlert");
-    alertDiv.classList.remove("hidden"); // Show alert
-}
+document.querySelectorAll('.copy-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    // Find the card where the button was clicked
+    const card = button.closest('.card');
+    const word = card.querySelector('.word-to-copy').innerText;
+    const status = card.querySelector('.status');
 
-function hideAlert() {
-    const alertDiv = document.getElementById("customAlert");
-    alertDiv.classList.add("hidden"); // Hide alert
-}
+    // Copy to clipboard
+    navigator.clipboard.writeText(word).then(() => {
+      status.textContent = `Copied: ${word}`;
+      setTimeout(() => { status.textContent = ''; }, 1500);
+    }).catch(err => {
+      console.error('Failed to copy:', err);
+      status.textContent = 'Copy failed';
+    });
+  });
+});
 </script>
 
 </body>

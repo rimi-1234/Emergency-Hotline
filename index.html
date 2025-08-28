@@ -37,7 +37,7 @@
           <img src="./assets/coin.png" alt="" class="w-6">
         </div>
         <div class="btn mt-1  bg-[#00a63e] w-27 border-none text-white rounded-r-full rounded-l-full ">
-          <span>0</span>Copy
+          <span id="js-copy-initial">0</span>Copy
         </div>
       </div>
 
@@ -57,9 +57,9 @@
     <section class="bg-[#41ff6a17] pt-5 md:pt-7  md: max-w-screen">
 
       <div class=" min-h-[600px]  pb-2  mx-auto mt-8 md:w-11/12 ">
-        <div class="grid grid-cols-1 w-full md:grid-cols-12  ">
-          <div id="js-iteams-detail" class=" w-full   md:col-span-9 min-h-[600px]  ">
-            <div class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+        <div class="grid grid-cols-1 w-full md:grid-cols-12 gap-10 md:gap-0 ">
+          <div  class=" w-full order-2   md:col-span-9 min-h-[600px] md:order-1  ">
+            <div id="js-iteams-detail" class="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
               <div class="card  bg-base-100 card-xl shadow-sm">
                 <div class="card-body">
                   <div class="flex justify-between items-center">
@@ -67,7 +67,7 @@
                       <img src="./assets/emergency.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart js-btn-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">National Emergency Number</h1>
@@ -81,7 +81,7 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
                     <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
@@ -97,7 +97,7 @@
                       <img src="./assets/police.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart js-btn-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Police Helpline Number</h1>
@@ -111,7 +111,7 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
                     <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn"><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
@@ -128,7 +128,7 @@
                       <img src="./assets/fire-service.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart js-btn-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Fire Service Number</h1>
@@ -142,7 +142,7 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
                     <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn"><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
@@ -158,7 +158,7 @@
                       <img src="./assets/ambulance.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Ambulance Service</h1>
@@ -172,9 +172,9 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
-                    <button class="btn w-1/2 rounded-md bg-[#00a63e] "><img class="w-5"
+                    <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn  "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
                       <span class="text-white font-light">Call</span></button>
                   </div>
@@ -188,7 +188,7 @@
                       <img src="./assets/emergency.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Women & Child Helpline</h1>
@@ -202,9 +202,9 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
-                    <button class="btn w-1/2 rounded-md bg-[#00a63e] "><img class="w-5"
+                    <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
                       <span class="text-white font-light">Call</span></button>
                   </div>
@@ -218,7 +218,7 @@
                       <img src="./assets/emergency.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Anti-Corruption Helpline</h1>
@@ -232,9 +232,9 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn "><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
-                    <button class="btn w-1/2 rounded-md bg-[#00a63e] "><img class="w-5"
+                    <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn  "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
                       <span class="text-white font-light">Call</span></button>
                   </div>
@@ -248,7 +248,7 @@
                       <img src="./assets/emergency.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer"></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Electricity Helpline</h1>
@@ -262,9 +262,9 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
-                    <button class="btn w-1/2 rounded-md bg-[#00a63e] "><img class="w-5"
+                    <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn  "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
                       <span class="text-white font-light">Call</span></button>
                   </div>
@@ -278,7 +278,7 @@
                       <img src="./assets/emergency.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer "></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Brac Helpline</h1>
@@ -292,9 +292,9 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
-                    <button class="btn w-1/2 rounded-md bg-[#00a63e] "><img class="w-5"
+                    <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
                       <span class="text-white font-light">Call</span></button>
                   </div>
@@ -308,7 +308,7 @@
                       <img src="./assets/emergency.png" class="w-8" alt="">
                     </div>
 
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart js-btn-heart cursor-pointer "></i>
                   </div>
                   <div class="pt-4">
                     <h1 class="text-1xl">Bangladesh Railway Helpline </h1>
@@ -322,9 +322,9 @@
                     </div>
                   </div>
                   <div class="w-full flex gap-2 pt-4 ">
-                    <button class="btn w-1/2 rounded-md bg-white border-2"><i class="fa-regular fa-copy"></i>
+                    <button class="btn w-1/2 rounded-md bg-white js-copy-btn"><i class="fa-regular fa-copy"></i>
                       <span>Copy</span></button>
-                    <button class="btn w-1/2 rounded-md bg-[#00a63e] "><img class="w-5"
+                    <button class="btn w-1/2 rounded-md bg-[#00a63e] js-call-btn "><img class="w-5"
                         src="https://img.icons8.com/ios/50/FFFFFF/phone--v1.png" alt="phone--v1" />
                       <span class="text-white font-light">Call</span></button>
                   </div>
@@ -335,22 +335,16 @@
 
             </div>
           </div>
-          <div class=" w-full mt-8 md:pt-4 md:mt-0 md:col-span-3 min-h-[600px] ml-0  bg-white md:ml-7 bt-2 rounded-lg">
+          <div class=" w-full order-1 mt-8 md:pt-4 md:mt-0 md:col-span-3 min-h-[100px] pb-[100px] md:min-h-[600px] ml-0  bg-white md:ml-7 bt-2 rounded-lg md:order-2">
             <div class="flex justify-between items-center p-6">
               <div>
                 <h1><i class="fa-regular fa-clock text-[#5C5C5C] font-normal text-[14px]"></i> <span class="font">Call
                     History</span></h1>
               </div>
-              <button class="btn bg-[#00a63e] w-28 border-none text-white rounded-r-full rounded-l-full">Clear</button>
+              <button id="js-clear-btn" class="btn bg-[#00a63e] w-28 border-none text-white rounded-r-full rounded-l-full">Clear</button>
             </div>
-            <div class=" container ">
-              <div class=" flex justify-between p-4 items-center bg-[#fafafa] m-5 mt-0 rounded-md">
-                <div>
-                  <h1 class="text-[16px]">Fire Service Number</h1>
-                  <p class="text-[#5C5C5C] font-normal text-[14px]">999</p>
-                </div>
-                <p class="text-[#5C5C5C] font-normal">11:36:58 AM</p>
-              </div>
+            <div id="js-history-container" class=" container ">
+             
             </div>
 
 
@@ -366,11 +360,45 @@
       <div class="flex px-4 items-center mb-3">
 
         <i class="fa-solid fa-xmark text-red-800 pr-4"></i>
-        <p class="text-white text-sm ">you don’t have enough 20-coin to call</p>
+        <p class="text-white text-sm  font-extralight">you don’t have enough 20-coin to call</p>
 
       </div>
       <div class="inline-block border-2 border-black rounded-full p-1 bg-pink-100 relative left-64">
-        <button onclick="hideAlert()" class="bg-pink-100 text-black px-7 py-3 rounded-full shadow border-2 border-black ">
+        <button onclick="hideInvalidAlert()" class="bg-pink-100 text-black px-7 py-3 rounded-full shadow border-2 border-black ">
+          OK
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div id="custom-valid-alert" class=" fixed inset-0 bg-black/50 flex  justify-center z-50 py-2 px-2 ">
+    <div class=" rounded-lg py-5 max-w-sm w-full text-left shadow-lg h-[150px] bg-[#3f3228dc]">
+      <p class="text-white px-4 text-sm">emergency-service-netify.app.says</p>
+      <div class="flex px-4 items-center mb-3">
+
+        <i class="fa-solid fa-phone text-red-800 pr-4"></i>
+        <p id="js-valid-text" class="text-white text-[13px]  font-extralight"></p>
+
+      </div>
+      <div class="inline-block border-2 border-black rounded-full p-1 bg-pink-100 relative left-64">
+        <button onclick="hideValidAlert()" class="bg-pink-100 text-black px-7 py-3 rounded-full shadow border-2 border-black ">
+          OK
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div id="custom-copyNumber-alert" class=" fixed inset-0 bg-black/50 flex  justify-center z-50 py-2 px-2 ">
+    <div class=" rounded-lg py-5 max-w-sm w-full text-left shadow-lg h-[150px] bg-[#3f3228dc]">
+      <p class="text-white px-4 text-md">emergency-service-netify.app.says</p>
+      <div class="flex px-4 items-center mb-3">
+
+        
+        <p id="js-copy-text" class="text-white text-[14px]  font-extralight"></p>
+
+      </div>
+      <div class="inline-block border-2 border-black rounded-full p-1 bg-pink-100 relative left-64">
+        <button onclick="hideCopyNumberAlert()" class="bg-pink-100 text-black px-7 py-3 rounded-full shadow border-2 border-black ">
           OK
         </button>
       </div>
