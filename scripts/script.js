@@ -72,7 +72,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 return;
             }
+            const serviceNameForalert = e.target.parentNode.parentNode.parentNode.children[1].children[1].innerText;
+     
             const serviceName = e.target.parentNode.parentNode.parentNode.children[1].children[0].innerText;
+            
+            
 
             const now = new Date();
             const formatted = now.toLocaleTimeString();
@@ -80,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const emergencyNumber = e.target.parentNode.parentNode.parentNode.children[2].children[0].innerText;
 
 
-            getelement('js-valid-text').innerText = `Calling ${serviceName} ${emergencyNumber}...`;
+            getelement('js-valid-text').innerText = `Calling ${serviceNameForalert} ${emergencyNumber}...`;
             showvalidAlert();
             const currentCoin = intialCoin - 20;
 
